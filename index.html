@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandhan Singh | Data Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #121212;
+            --text: #f1f1f1;
+            --accent: #1a73e8;
+            --card: #1e1e1e;
+            --light-text: #aaa;
+            --skill-bg: #2a2a2a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 0 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        header,
+        section {
+            max-width: 960px;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        header {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+        }
+
+        nav {
+            background-color: var(--card);
+            position: sticky;
+            top: 0;
+            padding: 15px 0;
+            border-bottom: 1px solid #444;
+            text-align: center;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        #toggle-mode {
+            display: none;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skills-grid span {
+            background-color: var(--skill-bg);
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--text);
+            transition: background-color 0.3s;
+        }
+
+        .skills-grid span:hover {
+            background-color: var(--accent);
+            color: #fff;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .social-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .download-resume {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-resume a {
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        [data-aos] {
+            opacity: 0;
+            transition-property: opacity, transform;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                display: none;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section#experience p+ul {
+                margin-bottom: 30px;
+            }
+
+            section#experience p:last-of-type {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+    <!-- <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+    </nav> -->
+
+    <header data-aos="fade-down">
+        <h1>Hi, I'm Bandhan Singh</h1>
+        <p>Data Engineer | Ex-Full Stack Developer | Android Hobbyist</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/bandhan-singh/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Bandhan-singh-katoch" target="_blank">GitHub</a>
+            <a href="mailto:parbhatbandhan@gmail.com">Email</a>
+        </div>
+        <div class="download-resume">
+            <a href="/resume.pdf" download>Download Resume</a>
+        </div>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>
+            I’m a Data Engineer with experience in building reliable, scalable data pipelines using PySpark, Azure Data
+            Factory, Kafka, and Databricks. Previously worked as a full stack developer and Android developer. I'm passionate about transforming raw data into meaningful insights.
+        </p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>PySpark</span>
+            <span>Kafka</span>
+            <span>Azure Data Factory</span>
+            <span>Databricks</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Airflow</span>
+            <span>Oracle</span>
+            <span>SAP HANA</span>
+            <span>Hive</span>
+            <span>Hadoop</span>
+            <span>Informatica</span>
+            <span>Angular</span>
+            <span>NestJS</span>
+            <span>NodeJS</span>
+            <span>LoopBack</span>
+            <span>PostgreSQL</span>
+            <span>FastAPI</span>
+        </div>
+    </section>
+
+    <section id="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech in Computer Science</strong>, I.K. Gujral Punjab Technical University (2019-2023), CGPA:
+                7.9</li>
+            <li><strong>Higher Secondary</strong> - JKBOSE, 87%</li>
+        </ul>
+    </section>
+
+    <section id="experience" data-aos="fade-up">
+        <h2>Experience</h2>
+        <p><strong>Reliance Jio - Data Engineer</strong> (Jan 2024 - Present)</p>
+        <ul>
+            <li>Rewrote SAP HANA stored procedure logic into scalable PySpark code for the ZPRC analytics project.</li>
+            <li>Built scalable ETL pipelines using ADF & Databricks handling millions of daily records.</li>
+            <li>Integrated Kafka for real-time data streams and created Tableau-ready data sources.</li>
+        </ul>
+
+        <p style="margin-top: 40px;"><strong>Clerisy Solutions - Full Stack Developer</strong> (Feb 2023 - Dec 2023)</p>
+        <ul>
+            <li>Developed backend logic and APIs using LoopBack and NestJS for hospitality platforms.</li>
+            <li>Built dashboards and booking modules using Angular & PostgreSQL.</li>
+            <li>Worked on ETL-like file processing and implemented inventory data flows.</li>
+        </ul>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>ZPRC Telecom Analytics</strong> - Migrated SAP HANA to Hive, optimized queries, and enabled
+                large-scale telecom reporting via PySpark and Databricks.</li>
+            <li><strong>Stayntouch IBE</strong> - Implemented booking logic and user auth in a microservice architecture
+                for hotel industry solutions.</li>
+            <li><strong>Capexpert</strong> - Created file-based ingestion logic, business dashboards, and data workflows
+                in PostgreSQL with Angular frontend.</li>
+        </ul>
+    </section>
+</body>
+
+</html>
